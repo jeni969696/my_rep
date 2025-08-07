@@ -1,0 +1,139 @@
+/* ===== RESETEO BÁSICO ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    "header header header header"
+    "enlaces enlaces enlaces aside"
+    "imagenes listamenu listamenu aside"
+    "testimonios testimonios testimonios testimonios"
+    "footer footer footer footer";
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* ===== ASIGNAR ÁREAS ===== */
+header {
+  grid-area: header;
+  background: #d44c2a;
+  color: white;
+  padding: 1rem;
+}
+
+.enlaces {
+  grid-area: enlaces;
+  background: #fbe9e7;
+  padding: 1rem;
+}
+
+.imagenes {
+  grid-area: imagenes;
+  padding: 1rem;
+  background: #fff3e0;
+}
+
+#listamenu {
+  grid-area: listamenu;
+  background: #ffe0b2;
+  padding: 1rem;
+}
+
+aside {
+  grid-area: aside;
+  background: #ffcc80;
+  padding: 1rem;
+}
+
+.testimonios {
+  grid-area: testimonios;
+  background: #f5f5f5;
+  padding: 1rem;
+}
+
+footer {
+  grid-area: footer;
+  background: #d44c2a;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* ===== NAV ===== */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ===== GALERÍA ===== */
+.galeria {
+  display: flex;
+  gap: 1rem;
+}
+
+.galeria img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.galeria img:hover {
+  transform: scale(1.05);
+}
+
+/* ===== LISTA DE MENÚ ===== */
+#listamenu ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#listamenu li {
+  padding: 0.25rem 0;
+}
+
+/* ===== TESTIMONIOS ===== */
+.testimonio {
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  body {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "enlaces"
+      "imagenes"
+      "listamenu"
+      "aside"
+      "testimonios"
+      "footer";
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  .galeria {
+    flex-direction: column;
+  }
+}
