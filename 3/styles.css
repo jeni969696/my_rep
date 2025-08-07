@@ -1,0 +1,137 @@
+body {
+   background-color: #13343f;
+   left: center;
+   text-align: center;
+}
+
+.encabezado{
+ 
+  left:right;
+ text-align: right;
+
+ color: #333;            /* Color personalizado (ej: gris oscuro) */
+  text-decoration: none;   /* Sin subrayado */
+  transition: color 0.3s; 
+}
+
+
+
+
+.inicio{
+ background-color: black;
+   
+    padding: 20px;
+    text-align: center;
+background-image: url('./images/fondob.jpg');
+    background-size:cover; 
+    background-position: center;        /* Ajusta la imagen al tamaño de la pantalla */
+    color: white; /* ejemplo de color de texto */
+
+
+}
+.entrada{
+background-image: url('./images/fondob.jpg');
+    background-size:cover; 
+    background-position: center;        /* Ajusta la imagen al tamaño de la pantalla */
+    color: white; /* ejemplo de color de texto */
+
+}
+.txtentrada{
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px; /* Ancho máximo para*/
+    float: left;
+    }
+
+
+ .imagenessecciones{
+display: flex;
+gap: 100px;px
+
+left:10px;
+}   
+
+.imagenessecciones img {
+  width: 200px;       /* Ancho fijo */
+  height: 200px;      /* Alto fijo (igual que el ancho para cuadrados) */
+  object-fit: cover;  /* Recorta la imagen para cubrir el espacio sin deformar */
+  object-position: center; /* Enfoca el centro de la imagen */
+}
+.introimg{
+ width: 500px;       /* Ancho fijo */
+  height: 500px;      /* Alto fijo (igual que el ancho para cuadrados) */
+  object-fit: cover;  /* Recorta la imagen para cubrir el espacio sin deformar */
+  object-position: center; /
+
+}
+
+
+.recetas{
+ background-image: url('./images/fondoa.jpg');
+/*background-color: #c2bf9d;*/
+    background-size: cover;         /* Ajusta la imagen al tamaño de la pantalla */
+    background-repeat: no-repeat;   /* Evita que se repita */
+    background-attachment: fixed;   /* Mantiene la imagen fija al hacer scroll */
+    background-position: center;    /* Centra la imagen */
+    color: white; /* ejemplo de color de texto */
+
+}
+h2{
+    left: center;
+}
+.listaplato{
+
+    background-color: rgba(85, 39, 13, 0.5);
+
+}
+/* Contenedor principal de ingredientes y preparación */
+.plato {
+  display: flex;           /* Activa Flexbox */
+  flex-wrap: wrap;         /* Permite que los elementos se envuelvan */
+  justify-content: space-between; /* Separa los elementos a los extremos */
+  margin-bottom: 20px;     /* Espacio antes de la información */
+}
+.intro{
+ left:center;
+  flex: 0 0 100%;          /* Ocupa todo el ancho */
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px auto;       /* Centrado horizontal */
+  text-align: center;      /* Texto centrado */
+
+
+}
+
+
+
+/* Ingredientes (izquierda) */
+.listaingr {
+  flex: 0 0 48%;          /* Ancho del 48% (para dejar espacio) */
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px 0;         /* Margen superior/inferior */
+}
+
+/* Preparación (derecha) */
+.preparacion {
+  flex: 0 0 48%;          /* Ancho del 48% */
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+/* Información (centrada debajo) */
+.informacion {
+  width: 100%;            /* Ocupa todo el ancho */
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px auto;      /* Centrado horizontal */
+  text-align: center;     /* Texto centrado */
+  clear: both;            /* Limpia cualquier float previo */
+}
